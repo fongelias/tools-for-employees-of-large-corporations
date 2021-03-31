@@ -14,7 +14,3 @@ deploy:
     bucket: $AWS_BUCKET_NAME
     skip_cleanup: true
     local_dir: build
-    on:
-      branches:
-        only:
-          - main
