@@ -15,4 +15,6 @@ deploy:
     skip_cleanup: true
     local_dir: build
     on:
-      branch: main
+      branches:
+        only:
+          - main
