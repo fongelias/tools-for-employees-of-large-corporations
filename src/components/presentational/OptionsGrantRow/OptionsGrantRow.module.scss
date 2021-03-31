@@ -1,0 +1,21 @@
+@import 'scss/variables.scss';
+
+.optionsGrantRow {
+  padding: $lg-padding 0;
+}
+
+.optionsGrantProperty {
+  max-width: 120px;
+  min-width: 80px;
+  padding: 0 $lg-padding;
+  
+  label {
+    font-size: $xs-font-size;
+    font-family: $open-sans;
+  }
+}
+
+.computedValue {
+  font-size: $sm-font-size;
+  line-height: 34px;
+}

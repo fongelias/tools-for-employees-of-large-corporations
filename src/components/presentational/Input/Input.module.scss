@@ -1,0 +1,19 @@
+@import 'scss/variables.scss';
+
+.input {
+  width: 110px;
+  height: 30px;
+  font-size: $sm-font-size;
+  font-family: $source-code-pro;
+  border: 0px;
+  border-bottom: $border-thickness solid $black;
+
+  &:focus {
+    border-color: $border-focus-color;
+    outline: none;
+  }
+  
+  &.error {
+    border-color: $border-error-color;
+  }
+}

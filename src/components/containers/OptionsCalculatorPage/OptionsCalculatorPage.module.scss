@@ -1,0 +1,102 @@
+@import 'scss/variables.scss';
+
+
+.optionsCalculatorHeader {
+  text-align: center;
+  font-family: $source-code-pro;
+
+  h1 {
+    margin: 0;
+    padding: #{$xl-padding * 3} 0;
+  }
+}
+
+.optionsCalculatorConstants {
+  padding: 50px 0;
+}
+
+.spacer {
+  width: #{106px + 80px + 107px + 6 * $lg-padding};
+  height: 30px;
+}
+
+.optionsCalculatorConstant {
+  padding: 0px $lg-padding; 
+
+  label {
+    font-size: $xs-font-size;
+    font-family: $open-sans;
+  }
+}
+
+.optionsGrantContainer {
+  padding: 20px 0;
+}
+
+.buttonContainer {
+  padding-top: 20px;
+}
+
+.addOptionsGrantButton {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  border: 2px solid $black;
+  border-radius: 100%;
+  outline: none;
+  /*animation*/
+  transition-timing-function: all ease 0.3s;
+  -webkit-transition: all ease 0.3s; /* Safari */
+  transition: all ease 0.3s;
+
+  .line1 {
+    width: 25px;
+		height: 2px;
+		background-color: $black;
+		display: inline-block;
+		position: absolute;
+		top: calc((100% - 2px) / 2);
+    left: calc((100% - 25px) / 2);
+    /*animation*/
+    transition-timing-function: all ease 0.3s;
+    -webkit-transition: all ease 0.3s; /* Safari */
+    transition: all ease 0.3s;
+  }
+
+  .line2 {
+		width: 2px;
+		height: 25px;
+		background-color: $black;
+		display: inline-block;
+		position: absolute;
+		top: calc((100% - 25px) / 2);
+    left: calc((100% - 2px) / 2);
+    /*animation*/
+    transition-timing-function: all ease 0.3s;
+    -webkit-transition: all ease 0.3s; /* Safari */
+    transition: all ease 0.3s;
+  }
+  
+  &:hover {
+    background-color: $black;
+
+    .line1, .line2 {
+      background-color: $white;
+    }
+  }
+
+  &:active {
+    .line1, .line2 {
+      /*animation*/
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+    }
+  }
+}
+
+.totalReturns {
+  text-align: center;
+  font-family: $source-code-pro;
+  padding: 50px 0;
+}

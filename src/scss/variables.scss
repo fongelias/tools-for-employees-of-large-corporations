@@ -1,0 +1,37 @@
+/*-- Colors -- */
+$white: #ffffff;
+$black: #000000;
+$cornflower: cornflowerblue;
+$error-red: red;
+$transparent: rgba(0,0,0,0);
+/*-- Typeography --*/
+    /*-- Fonts --*/
+    // $font-family: 'Helvetica Neue', sans-serif;
+    $source-code-pro: 'Source Code Pro', monospace;
+    $open-sans: 'Open Sans', sans-serif;
+    /*-- Sizing --*/
+    $xs-font-size: 14px;
+    $sm-font-size: 18px;
+    $lg-font-size: 40px;
+/*-- Borders --*/
+    /*-- Color --*/
+    $border-focus-color: $cornflower;
+    $border-error-color: $error-red;
+    /*-- Radius --*/
+    $border-thickness: 2px;
+    $border-radius: 3px;
+/*-- Spacing --*/
+    /*-- Padding --*/
+    $xs-padding: 3px;
+    $sm-padding: 5px;
+    $lg-padding: 10px;
+    $xl-padding: 20px;
+    /*-- Margin --*/
+    $xs-margin: 3px;
+    $sm-margin: 5px;
+    $md-margin: 7px;
+    $lg-margin: 10px;
+/*-- Animation --*/
+@function easeInTransition($seconds) {
+    @return ease-in $seconds;
+}
